@@ -26,6 +26,6 @@
     "webpack-dev-server": "^3.6.0"
   },
   "dependencies": {
-    
+    "lit-element": "^2.1.0"
   }
 }

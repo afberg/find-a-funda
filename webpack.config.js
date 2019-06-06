@@ -11,7 +11,7 @@ module.exports = env => {
         devtool: isProd ? "" :"inline-source-map",
         watch: !isProd, 
         entry: {
-            app: './src/app.js',
+            app: './src/app.ts',
         },
         output: {
             filename: '[name].bundle.js',
