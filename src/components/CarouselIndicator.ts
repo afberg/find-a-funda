@@ -12,6 +12,9 @@ export default class CarouselIndicator extends LitElement {
     @property( { type: Number } ) count = 4;  
     @property( { type: Number } ) activeIx = 1;
     static get styles() {
+
+        // To make the effect scale better we use an ::after element that is five times the
+        // size of the original element. 
         return css`
         :host {
             display: flex;

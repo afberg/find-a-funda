@@ -1,0 +1,16 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #424242;
+}
+h1{
+    text-align: center;
+}
+.wrapper {
+    /* Sorry, it doesn't look great on desktop but mobile works better*/
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+funda-search{
+    width: 100%;
+}

@@ -19,18 +19,19 @@ export class ResultsList extends LitElement {
             display: block;
             position: relative;
             min-width: 100%;
+            max-width: 800px;
             scroll-snap-align: start;
         }
         .slider{
-            width: 100vw;
+            width: 100%;
             scroll-snap-type: x mandatory;
             overflow-x: scroll;
             display: flex;
         }
         img {
             display: block;
-            max-width: 100%;
-            min-width: 100%;
+            width: 100%;
+            max-width: 800px;
 
         }
         .price{
@@ -57,10 +58,17 @@ export class ResultsList extends LitElement {
         `;
         
     }
+    updated(changedProperties) {
+        //Force indicator back to zero when new results load
+        if(changedProperties.results) {
+            this.active = 0;
+        } 
+    }
 
     render() {
         return html`
             <div class="results">
+                <!-- TODO: implement navigation buttons so this works for desktops etc -->
                 <div class="slider" @scroll="${debounce(this.updateActiveSlide, 200)}">
                     ${this.results.map(result => html`
                     <a class="container" href="${result.link}">
