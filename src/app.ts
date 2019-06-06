@@ -1,1 +1,1 @@
-import "./components/SearchField";
+import "./components/FundaSearch";
