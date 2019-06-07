@@ -29,7 +29,9 @@ There are several things that should be done to make this setup work better, her
 
 Simply clone the repository to a location of your choice, run an `npm install` and you are good to go... almost.
 
-Since the funda API doesn't allow CORS (hrm hrm...) most modern browsers will block the application from receiving any requests. A more permanent solution would be to proxy any requests from the application via a web-server on the local machine, but for now you will have to run your browser with the `--disable-web-security`-flag. For chrome on a mac this can be done with the following command 
+Since the funda API doesn't allow CORS (hrm hrm...) most modern browsers will block the application from receiving any requests. If all you're seeing is a spinning stroopwafel, then that means we're getting opaque responses from the server or they are being blocked.
+
+A more permanent solution would be to proxy any API requests via a web-server on the local machine, but for now you will have to run your browser with the `--disable-web-security` -flag. For chrome on a mac this can be done with the following command 
 
 *Make sure all browser windows are closed*
 
