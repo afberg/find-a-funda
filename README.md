@@ -21,12 +21,15 @@ There are several things that should be done to make this setup work better, her
 6. CORS handling
    
    _More info below_
+7. The bugs
+
+   As with all software this is riddled with small bugs, hopfully you won't come across any. Or maybe you will. Either way, they shouldn't be there.
 
 ## Installation
 
 Simply clone the repository to a location of your choice, run an `npm install` and you are good to go... almost.
 
-Since the funda API doesn't allow CORS most modern browsers will block the application from receiving any requests. A more permanent solution would be to proxy any requests from the application via a web-server on the local machine, but for now you will have to run your browser with the `--disable-web-security`-flag. For chrome on a mac this can be done with the following command 
+Since the funda API doesn't allow CORS (hrm hrm...) most modern browsers will block the application from receiving any requests. A more permanent solution would be to proxy any requests from the application via a web-server on the local machine, but for now you will have to run your browser with the `--disable-web-security`-flag. For chrome on a mac this can be done with the following command 
 
 *Make sure all browser windows are closed*
 
@@ -36,7 +39,7 @@ On my own laptop the command looked like this:
 
 `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --args --user-data-dir=/tmp/chrome_dev_test --disable-web-security`
 
-After that just run `npm run dev` to start the development server and you are golden. Look in the output for the port being used on your local machine, (default is :8080).
+After that just run `npm run dev` to start the development server and you are golden. Look in the output for the port being used on your local machine, (default adress is localhost:8080).
 
 ## Using it
 
