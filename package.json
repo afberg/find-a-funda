@@ -30,5 +30,6 @@
     "debounce": "^1.2.0",
     "lit-element": "^2.1.0",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "browserslist": "> 1%, not IE <= 11"
 }

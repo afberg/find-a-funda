@@ -41,7 +41,7 @@ On my own laptop the command looked like this:
 
 `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --args --user-data-dir=/tmp/chrome_dev_test --disable-web-security`
 
-After that just run `npm run dev` to start the development server and you are golden. Look in the output for the port being used on your local machine, (default adress is localhost:8080).
+After that just run `npm run start` to start the development server and you are golden. Look in the output for the port being used on your local machine, (default adress is localhost:8080).
 
 ## Using it
 

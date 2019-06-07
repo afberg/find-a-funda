@@ -41,6 +41,7 @@ module.exports = env => {
                         }
                     },
                     {
+                        // Allows a sass-like syntax and adds prefixes to our css 
                         loader: 'postcss-loader'
                     }
                 ]
@@ -52,19 +53,22 @@ module.exports = env => {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
+                
             },
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'ts-loader'
-                }
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
+                    },
+                    {
+                        loader: 'ts-loader'
+                    }
+                ]
             }
         ],
             
